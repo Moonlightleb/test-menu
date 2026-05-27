@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent" />
+    <meta name="description" content="Digital Menu - Moonlight Restaurant" />
+    <title>Moonlight</title>
+    <link
+      rel="preload"
+      href="./fonts/cormorant-garamond-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      href="./fonts/plus-jakarta-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link
+      rel="shortcut icon"
+      href="https://menus.blob.core.windows.net/shared/66d739121389bc24cc9d5407/6b2cf9b7-57aa-488c-a150-a200ec15aeb2.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+  </head>
+  <body>
+    <div id="progress-bar">
+      <div class="loader-logo" id="loader-logo"></div>
+      <div id="progress"></div>
+    </div>
+    <div id="content" style="display: none">
+      <header id="header"></header>
+      <nav id="btn-group" role="navigation" aria-label="Menu categories"></nav>
+      <main>
+        <div id="menu-body"></div>
+      </main>
+    </div>
+
+    <div
+      id="up-btn"
+      onclick="click_Tag('header')"
+      role="button"
+      aria-label="Back to top">
+      <svg class="progress-ring" viewBox="0 0 50 50">
+        <circle class="progress-ring-bg" cx="25" cy="25" r="22.5" />
+        <circle class="progress-ring-fill" cx="25" cy="25" r="22.5" />
+      </svg>
+      <a class="reference" href="#header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="up-icon"
+          viewBox="0 0 16 16">
+          <path
+            fill-rule="evenodd"
+            d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+          <path
+            fill-rule="evenodd"
+            d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+        </svg>
+      </a>
+    </div>
+
+    <footer class="menu-footer" role="contentinfo">
+      <p class="menu-footer-meta">
+        <span id="year">&copy; 2025</span>
+        <span class="menu-footer-separator" aria-hidden="true"></span>
+        <span>Powered By</span>
+        <a
+          class="menu-footer-inline-link"
+          href="https://ks-solutions-lb.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit KS Solutions">
+          KS Solutions
+        </a>
+      </p>
+    </footer>
+
+    <script src="./kss-engine/kss-engine.js"></script>
+    <script src="./js/features.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
