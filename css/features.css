@@ -1,10 +1,35 @@
+/* ===== Component Tokens ===== */
+:root {
+  --lightbox-backdrop-bg: rgba(8, 9, 11, 0.88);
+  --lightbox-content-max-width: 90vw;
+  --lightbox-content-max-height: 85vh;
+  --lightbox-content-scale: 0.96;
+  --lightbox-image-radius: 12px;
+  --lightbox-image-shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
+  --lightbox-close-offset-top: -50px;
+  --lightbox-close-size: 38px;
+  --lightbox-close-bg: rgba(255, 255, 255, 0.12);
+  --lightbox-close-bg-hover: rgba(255, 255, 255, 0.18);
+  --lightbox-close-icon-size: 20px;
+
+  --item-image-column-width: 102px;
+  --item-image-gap: 14px;
+  --item-image-min-height: 84px;
+  --item-image-radius: 20px;
+  --item-image-bg: rgba(255, 255, 255, 0.03);
+  --item-image-border: 1.5px solid rgba(190, 141, 93, 0.52);
+  --item-image-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+  --item-image-content-justify: center;
+  --item-image-content-padding-top: 0;
+  --item-no-image-description-width: 44ch;
+  --item-image-fade-duration: 0.3s ease;
+  --item-image-shimmer-size: 200% 100%;
+}
+
 /* ===== Image Lightbox ===== */
 #lightbox {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 2000;
   display: flex;
   align-items: center;
@@ -23,21 +48,18 @@
 
 .lightbox-backdrop {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(8, 9, 11, 0.88);
+  inset: 0;
+  background: var(--lightbox-backdrop-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
 .lightbox-content {
   position: relative;
-  max-width: 90vw;
-  max-height: 85vh;
+  max-width: var(--lightbox-content-max-width);
+  max-height: var(--lightbox-content-max-height);
   z-index: 1;
-  transform: scale(0.96);
+  transform: scale(var(--lightbox-content-scale));
   transition: transform 0.22s ease;
 }
 
@@ -46,21 +68,21 @@
 }
 
 .lightbox-img {
-  max-width: 90vw;
-  max-height: 85vh;
+  max-width: var(--lightbox-content-max-width);
+  max-height: var(--lightbox-content-max-height);
   object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
+  border-radius: var(--lightbox-image-radius);
+  box-shadow: var(--lightbox-image-shadow);
 }
 
 .lightbox-close {
   position: absolute;
-  top: -50px;
+  top: var(--lightbox-close-offset-top);
   right: 0;
-  width: 38px;
-  height: 38px;
+  width: var(--lightbox-close-size);
+  height: var(--lightbox-close-size);
   border: none;
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--lightbox-close-bg);
   border-radius: 50%;
   color: white;
   cursor: pointer;
@@ -72,7 +94,7 @@
 }
 
 .lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.18);
+  background: var(--lightbox-close-bg-hover);
   transform: scale(1.03);
 }
 
@@ -81,17 +103,12 @@
 }
 
 .lightbox-close svg {
-  width: 20px;
-  height: 20px;
+  width: var(--lightbox-close-icon-size);
+  height: var(--lightbox-close-icon-size);
 }
 
 /* ===== Item Images ===== */
 .item.has-image {
-  --item-image-column-width: 168px;
-  --item-image-gap: 18px;
-  --item-image-min-height: 124px;
-  --item-image-radius: 24px;
-
   display: grid;
   grid-template-columns: var(--item-image-column-width) minmax(0, 1fr);
   grid-template-areas: "image content";
@@ -111,9 +128,9 @@
   border-radius: var(--item-image-radius);
   overflow: hidden;
   cursor: zoom-in;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1.5px solid rgba(190, 141, 93, 0.52);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+  background: var(--item-image-bg);
+  border: var(--item-image-border);
+  box-shadow: var(--item-image-shadow);
 }
 
 .item-img-bg {
@@ -126,15 +143,14 @@
 
 .item-img-main {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--item-image-fade-duration);
 }
 
 .item-img-main.loaded {
@@ -146,7 +162,8 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: var(--item-image-content-justify);
+  padding-top: var(--item-image-content-padding-top);
 }
 
 .item:not(.has-image) .item-content {
@@ -154,24 +171,21 @@
 }
 
 .item:not(.has-image) .description {
-  max-width: 44ch;
+  max-width: var(--item-no-image-description-width);
 }
 
 /* Loading placeholder animation */
 .item-img-container::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: linear-gradient(
     90deg,
     var(--glass-bg) 0%,
     rgba(255, 255, 255, 0.1) 50%,
     var(--glass-bg) 100%
   );
-  background-size: 200% 100%;
+  background-size: var(--item-image-shimmer-size);
   animation: shimmer 1.8s infinite;
   z-index: 0;
 }
@@ -191,27 +205,15 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 480px) {
-  .item.has-image {
-    --item-image-column-width: 102px;
-    --item-image-gap: 14px;
-    --item-image-min-height: 84px;
-    --item-image-radius: 20px;
-  }
-
-  .lightbox-close {
-    top: -45px;
-    width: 36px;
-    height: 36px;
-  }
-
-  .lightbox-close svg {
-    width: 18px;
-    height: 18px;
+  :root {
+    --lightbox-close-offset-top: -45px;
+    --lightbox-close-size: 36px;
+    --lightbox-close-icon-size: 18px;
   }
 }
 
 @media screen and (max-width: 390px) {
-  .item.has-image {
+  :root {
     --item-image-column-width: 92px;
     --item-image-gap: 12px;
     --item-image-min-height: 78px;
@@ -219,25 +221,20 @@
 }
 
 @media screen and (max-width: 360px) {
-  .item.has-image {
+  :root {
     --item-image-column-width: 84px;
     --item-image-min-height: 72px;
   }
 }
 
 @media screen and (max-width: 310px) {
-  .item.has-image {
+  :root {
     --item-image-column-width: 62px;
     --item-image-gap: 8px;
     --item-image-min-height: 58px;
     --item-image-radius: 14px;
-
-    align-items: start;
-  }
-
-  .item.has-image .item-content {
-    justify-content: flex-start;
-    padding-top: 2px;
+    --item-image-content-justify: flex-start;
+    --item-image-content-padding-top: 2px;
   }
 
   .item:not(.has-image) .description,

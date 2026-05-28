@@ -140,7 +140,7 @@ function renderHeaderMarkup(store) {
   var socialLinks = joinMarkup([
     store.sm && store.sm.instagramUrl
       ? renderDetailsLink({
-          variant: "secondary",
+          variant: "primary",
           href: store.sm.instagramUrl,
           targetBlank: true,
           ariaLabel: "Open Instagram",
@@ -150,7 +150,7 @@ function renderHeaderMarkup(store) {
       : "",
     store.sm && store.sm.facebookUrl
       ? renderDetailsLink({
-          variant: "secondary",
+          variant: "primary",
           href: store.sm.facebookUrl,
           targetBlank: true,
           ariaLabel: "Open Facebook",
