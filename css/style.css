@@ -242,7 +242,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--page-font-size);
   background-color: var(--page-bg-color);
-  background-image: var(--page-bg-image);
+  /* background-image: var(--page-bg-image); */
   background-attachment: fixed;
   min-height: 100dvh;
   min-height: -webkit-fill-available;
