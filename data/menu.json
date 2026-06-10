@@ -1,5 +1,5 @@
 {
-  "_dataFreshness": "Wednesday, 10 June 2026 14:30:00 UTC",
+  "_dataFreshness": "Wednesday, 10 June 2026 15:00:00 UTC",
   "store": {
     "sm": {
       "email": "",
@@ -61,7 +61,7 @@
       "label": "Pizza",
       "order": 3,
       "img": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/61433126-c8ed-45db-8c8c-c8a193280063.svg",
-      "bgImg": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/2037e120-80c5-45d6-ada3-fa25256e0c6c.jpeg",
+      "bgImg": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/96d042e0-7a65-4d26-aa77-2dd3c58561c4.jpeg",
       "useSizes": false,
       "sizes": [],
       "hide": false,
