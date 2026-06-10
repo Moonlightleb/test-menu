@@ -1,5 +1,5 @@
 {
-  "_dataFreshness": "Wednesday, 10 June 2026 18:00:00 UTC",
+  "_dataFreshness": "Wednesday, 10 June 2026 22:00:00 UTC",
   "store": {
     "sm": {
       "email": "",
@@ -61,7 +61,7 @@
       "label": "Pizza",
       "order": 3,
       "img": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/61433126-c8ed-45db-8c8c-c8a193280063.svg",
-      "bgImg": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/c6a9cbdb-e54d-4a35-80c0-11d044bd9d9e.png",
+      "bgImg": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/1a8f408f-96e2-473b-a917-1c0165fa021a.png",
       "useSizes": false,
       "sizes": [],
       "hide": false,
@@ -204,13 +204,14 @@
       "unit": null,
       "order": 4,
       "price": 6.5,
-      "img": null,
+      "img": "",
       "bgImg": null,
       "hide": false,
-      "calories": 500,
+      "calories": null,
       "is_Starred": false,
       "is_New": false,
-      "sizes": []
+      "sizes": [],
+      "is_Light": false
     },
     {
       "_id": "6a1725eb2d67f9047e7ccfb3",
@@ -836,7 +837,14 @@
       "order": 2,
       "price": 2,
       "hide": false,
-      "sizes": []
+      "sizes": [],
+      "bgImg": null,
+      "calories": null,
+      "img": "",
+      "is_Light": false,
+      "is_New": false,
+      "is_Starred": true,
+      "unit": null
     },
     {
       "_id": "6a1725eb2d67f9047e7ccf85",
@@ -905,34 +913,12 @@
       "sizes": []
     },
     {
-      "_id": "6a1725eb2d67f9047e7ccfb5",
-      "menuId": "6a17240f2d67f9047e7ccda4",
-      "subcategoryId": "6a1725eb2d67f9047e7ccf71",
-      "label": "Green Tea",
-      "description": "",
-      "order": 7,
-      "price": 1.5,
-      "hide": false,
-      "sizes": []
-    },
-    {
-      "_id": "6a1725eb2d67f9047e7ccfa9",
-      "menuId": "6a17240f2d67f9047e7ccda4",
-      "subcategoryId": "6a1725eb2d67f9047e7ccf71",
-      "label": "Camomile",
-      "description": "",
-      "order": 8,
-      "price": 1.5,
-      "hide": false,
-      "sizes": []
-    },
-    {
       "_id": "6a1725eb2d67f9047e7ccfae",
       "menuId": "6a17240f2d67f9047e7ccda4",
       "subcategoryId": "6a1725eb2d67f9047e7ccf71",
       "label": "Almaza Beer",
       "description": "",
-      "order": 9,
+      "order": 7,
       "price": 2,
       "hide": false,
       "sizes": []
@@ -943,7 +929,7 @@
       "subcategoryId": "6a1725eb2d67f9047e7ccf71",
       "label": "Heineken Beer",
       "description": "",
-      "order": 10,
+      "order": 8,
       "price": 2.5,
       "hide": false,
       "sizes": []
@@ -955,7 +941,7 @@
       "label": "Mexican Beer",
       "description": "",
       "unit": null,
-      "order": 11,
+      "order": 9,
       "price": 4,
       "img": null,
       "bgImg": null,
@@ -966,35 +952,13 @@
       "sizes": []
     },
     {
-      "_id": "6a1725eb2d67f9047e7ccfb0",
-      "menuId": "6a17240f2d67f9047e7ccda4",
-      "subcategoryId": "6a1725eb2d67f9047e7ccf71",
-      "label": "Ananas Extra",
-      "description": "",
-      "order": 12,
-      "price": 1,
-      "hide": false,
-      "sizes": []
-    },
-    {
-      "_id": "6a1725eb2d67f9047e7ccfac",
-      "menuId": "6a17240f2d67f9047e7ccda4",
-      "subcategoryId": "6a1725eb2d67f9047e7ccf71",
-      "label": "Lemonade",
-      "description": "",
-      "order": 13,
-      "price": 1,
-      "hide": false,
-      "sizes": []
-    },
-    {
       "_id": "6a1725eb2d67f9047e7ccfa7",
       "menuId": "6a17240f2d67f9047e7ccda4",
       "subcategoryId": "6a1725eb2d67f9047e7ccf71",
       "label": "Perrier",
       "description": "",
       "unit": null,
-      "order": 14,
+      "order": 10,
       "price": 1.5,
       "img": null,
       "bgImg": null,
@@ -1026,7 +990,7 @@
       "menuId": "6a17240f2d67f9047e7ccda4",
       "subcategoryId": "6a2965f11c321f7baf208053",
       "label": "Tawouk Platter",
-      "description": null,
+      "description": "Grilled tawouk served with saison salad, grilled fries and lemon mustard dip.",
       "unit": null,
       "order": 3,
       "price": null,
@@ -1060,7 +1024,7 @@
       "menuId": "6a17240f2d67f9047e7ccda4",
       "subcategoryId": "6a2965f11c321f7baf208053",
       "label": "Chicken Platter",
-      "description": null,
+      "description": "2 Grilled chicken served with saison salad, grilled fries and lemon mustard dip.",
       "unit": null,
       "order": 4,
       "price": null,
