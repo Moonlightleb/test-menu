@@ -1,5 +1,5 @@
 {
-  "_dataFreshness": "Wednesday, 10 June 2026 13:30:01 UTC",
+  "_dataFreshness": "Wednesday, 10 June 2026 14:00:00 UTC",
   "store": {
     "sm": {
       "email": "",
@@ -36,7 +36,7 @@
       "menuId": "6a17240f2d67f9047e7ccda4",
       "label": "Sandwiches",
       "order": 1,
-      "img": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/b211c5d8-c04f-48d3-93e2-79d8473929bf.svg",
+      "img": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/6f861107-1477-48f8-a592-24b0bb743925.svg",
       "bgImg": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/28595430-9493-4c85-8450-c487581ad518.png",
       "useSizes": false,
       "sizes": [],
@@ -132,7 +132,7 @@
       "menuId": "6a17240f2d67f9047e7ccda4",
       "label": "Light Menu",
       "order": 7,
-      "img": "",
+      "img": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/7daedc9f-9643-4c42-b9bd-5fabeb731f5b.svg",
       "bgImg": "",
       "useSizes": false,
       "sizes": [],
@@ -150,13 +150,14 @@
       "unit": null,
       "order": 1,
       "price": 6.5,
-      "img": "https://menus.blob.core.windows.net/shared/695e6657535fb973f32ec59e/daa8e924-1d41-489c-9a37-e71c3b6d23df.jpg",
+      "img": "",
       "bgImg": null,
       "hide": false,
       "calories": null,
-      "is_Starred": false,
+      "is_Starred": true,
       "is_New": false,
-      "sizes": []
+      "sizes": [],
+      "is_Light": false
     },
     {
       "_id": "6a1725eb2d67f9047e7ccfb1",
@@ -171,9 +172,10 @@
       "bgImg": null,
       "hide": false,
       "calories": null,
-      "is_Starred": true,
+      "is_Starred": false,
       "is_New": false,
-      "sizes": []
+      "sizes": [],
+      "is_Light": false
     },
     {
       "_id": "6a1725eb2d67f9047e7ccf84",
@@ -184,13 +186,14 @@
       "unit": null,
       "order": 3,
       "price": 5.5,
-      "img": null,
+      "img": "",
       "bgImg": null,
       "hide": false,
       "calories": null,
       "is_Starred": false,
-      "is_New": true,
-      "sizes": []
+      "is_New": false,
+      "sizes": [],
+      "is_Light": false
     },
     {
       "_id": "6a1725eb2d67f9047e7ccf90",
@@ -269,13 +272,14 @@
       "unit": null,
       "order": 8,
       "price": 6,
-      "img": null,
+      "img": "",
       "bgImg": null,
       "hide": false,
       "calories": null,
-      "is_Starred": false,
+      "is_Starred": true,
       "is_New": false,
-      "sizes": []
+      "sizes": [],
+      "is_Light": false
     },
     {
       "_id": "6a1725eb2d67f9047e7ccfb7",
@@ -762,13 +766,14 @@
       "unit": null,
       "order": 1,
       "price": 3,
-      "img": null,
+      "img": "",
       "bgImg": null,
       "hide": false,
       "calories": null,
-      "is_Starred": false,
+      "is_Starred": true,
       "is_New": false,
-      "sizes": []
+      "sizes": [],
+      "is_Light": false
     },
     {
       "_id": "6a1725eb2d67f9047e7ccfb2",
@@ -813,13 +818,14 @@
       "unit": null,
       "order": 1,
       "price": 4,
-      "img": null,
+      "img": "",
       "bgImg": null,
       "hide": false,
       "calories": null,
-      "is_Starred": false,
+      "is_Starred": true,
       "is_New": false,
-      "sizes": []
+      "sizes": [],
+      "is_Light": false
     },
     {
       "_id": "6a1725eb2d67f9047e7ccf82",
@@ -1005,7 +1011,7 @@
       "label": "Chicken Sandwich",
       "description": null,
       "unit": null,
-      "order": 1781097911222,
+      "order": 1,
       "price": null,
       "img": "",
       "bgImg": null,
@@ -1013,7 +1019,7 @@
       "calories": null,
       "is_Light": false,
       "is_Starred": false,
-      "is_New": false
+      "is_New": true
     },
     {
       "_id": "6a2965f11c321f7baf20805e",
@@ -1022,7 +1028,7 @@
       "label": "Tuna Sandwich",
       "description": null,
       "unit": null,
-      "order": 1781097924593,
+      "order": 2,
       "price": null,
       "img": "",
       "bgImg": null,
@@ -1030,7 +1036,7 @@
       "calories": null,
       "is_Light": false,
       "is_Starred": false,
-      "is_New": false
+      "is_New": true
     },
     {
       "_id": "6a2965f11c321f7baf20805f",
@@ -1039,7 +1045,7 @@
       "label": "Tawouk Platter",
       "description": null,
       "unit": null,
-      "order": 1781097935593,
+      "order": 3,
       "price": null,
       "img": "",
       "bgImg": null,
@@ -1047,7 +1053,7 @@
       "calories": null,
       "is_Light": false,
       "is_Starred": false,
-      "is_New": false
+      "is_New": true
     },
     {
       "_id": "6a2965f11c321f7baf208060",
@@ -1056,7 +1062,7 @@
       "label": "Chicken Platter",
       "description": null,
       "unit": null,
-      "order": 1781097958878,
+      "order": 4,
       "price": null,
       "img": "",
       "bgImg": null,
@@ -1064,7 +1070,7 @@
       "calories": null,
       "is_Light": false,
       "is_Starred": false,
-      "is_New": false
+      "is_New": true
     }
   ]
 }
