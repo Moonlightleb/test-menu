@@ -1,5 +1,5 @@
 {
-  "_dataFreshness": "Wednesday, 10 June 2026 15:30:00 UTC",
+  "_dataFreshness": "Wednesday, 10 June 2026 18:00:00 UTC",
   "store": {
     "sm": {
       "email": "",
@@ -61,7 +61,7 @@
       "label": "Pizza",
       "order": 3,
       "img": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/61433126-c8ed-45db-8c8c-c8a193280063.svg",
-      "bgImg": "",
+      "bgImg": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/c6a9cbdb-e54d-4a35-80c0-11d044bd9d9e.png",
       "useSizes": false,
       "sizes": [],
       "hide": false,
@@ -1005,23 +1005,6 @@
       "sizes": []
     },
     {
-      "_id": "6a2965f11c321f7baf20805d",
-      "menuId": "6a17240f2d67f9047e7ccda4",
-      "subcategoryId": "6a2965f11c321f7baf208053",
-      "label": "Chicken Sandwich",
-      "description": null,
-      "unit": null,
-      "order": 1,
-      "price": null,
-      "img": "",
-      "bgImg": null,
-      "hide": false,
-      "calories": null,
-      "is_Light": false,
-      "is_Starred": false,
-      "is_New": true
-    },
-    {
       "_id": "6a2965f11c321f7baf20805e",
       "menuId": "6a17240f2d67f9047e7ccda4",
       "subcategoryId": "6a2965f11c321f7baf208053",
@@ -1046,6 +1029,23 @@
       "description": null,
       "unit": null,
       "order": 3,
+      "price": null,
+      "img": "",
+      "bgImg": null,
+      "hide": false,
+      "calories": null,
+      "is_Light": false,
+      "is_Starred": false,
+      "is_New": true
+    },
+    {
+      "_id": "6a2965f11c321f7baf20805d",
+      "menuId": "6a17240f2d67f9047e7ccda4",
+      "subcategoryId": "6a2965f11c321f7baf208053",
+      "label": "Chicken Sandwich",
+      "description": null,
+      "unit": null,
+      "order": 1,
       "price": null,
       "img": "",
       "bgImg": null,
