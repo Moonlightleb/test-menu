@@ -1,5 +1,5 @@
 {
-  "_dataFreshness": "Wednesday, 10 June 2026 22:00:00 UTC",
+  "_dataFreshness": "Thursday, 11 June 2026 16:30:01 UTC",
   "store": {
     "sm": {
       "email": "",
@@ -133,7 +133,7 @@
       "label": "Light Menu",
       "order": 7,
       "img": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/7daedc9f-9643-4c42-b9bd-5fabeb731f5b.svg",
-      "bgImg": "",
+      "bgImg": "https://menus.blob.core.windows.net/shared/6a17240f2d67f9047e7ccda4/ab52f545-0a4a-4ea5-93e5-9204b838b8bd.png",
       "useSizes": false,
       "sizes": [],
       "hide": false,
@@ -969,6 +969,23 @@
       "sizes": []
     },
     {
+      "_id": "6a2965f11c321f7baf20805d",
+      "menuId": "6a17240f2d67f9047e7ccda4",
+      "subcategoryId": "6a2965f11c321f7baf208053",
+      "label": "Chicken Sandwich",
+      "description": null,
+      "unit": null,
+      "order": 1,
+      "price": null,
+      "img": "",
+      "bgImg": null,
+      "hide": false,
+      "calories": null,
+      "is_Light": false,
+      "is_Starred": false,
+      "is_New": true
+    },
+    {
       "_id": "6a2965f11c321f7baf20805e",
       "menuId": "6a17240f2d67f9047e7ccda4",
       "subcategoryId": "6a2965f11c321f7baf208053",
@@ -993,23 +1010,6 @@
       "description": "Grilled tawouk served with saison salad, grilled fries and lemon mustard dip.",
       "unit": null,
       "order": 3,
-      "price": null,
-      "img": "",
-      "bgImg": null,
-      "hide": false,
-      "calories": null,
-      "is_Light": false,
-      "is_Starred": false,
-      "is_New": true
-    },
-    {
-      "_id": "6a2965f11c321f7baf20805d",
-      "menuId": "6a17240f2d67f9047e7ccda4",
-      "subcategoryId": "6a2965f11c321f7baf208053",
-      "label": "Chicken Sandwich",
-      "description": null,
-      "unit": null,
-      "order": 1,
       "price": null,
       "img": "",
       "bgImg": null,
