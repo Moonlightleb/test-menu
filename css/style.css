@@ -881,6 +881,7 @@ article {
 
 .badge-starred {
   display: inline-block;
+  margin-bottom: 2px;
   color: var(--gold-accent);
   font-size: var(--badge-starred-size);
   padding: 0 3px;

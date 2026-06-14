@@ -289,7 +289,13 @@ function renderItem(item, store) {
     '<div class="description">' + (item.description || "") + "</div>",
     "</div>",
     "</div>",
-    '<div class="price" aria-label="Price ' + price + '">' + price + "</div>",
+    price
+      ? '<div class="price" aria-label="Price ' +
+        price +
+        '">' +
+        price +
+        "</div>"
+      : "",
     "</div>",
   ]);
 }
